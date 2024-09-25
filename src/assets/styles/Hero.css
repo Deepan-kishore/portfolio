@@ -1,0 +1,28 @@
+/* Hero.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 50;
+}
+
+.navbar .logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links a {
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: var(--primary-color);
+}

@@ -1,0 +1,179 @@
+:root {
+  --primary-color: #007aff; /* Apple blue */
+  --secondary-color: #ff9500; /* Apple orange */
+  --background-color: #f8f9fa; /* Light gray background */
+  --text-color: #333333; /* Dark text color */
+  --light-text-color: #6b7280; /* Light gray text color */
+  --white: #ffffff; /* White color */
+  --card-background: #ffffff; /* Card background color */
+  --card-shadow: rgba(0, 0, 0, 0.1); /* Card shadow color */
+}
+
+[data-theme="dark"] {
+  --background-color: #1a1a1a; /* Dark background */
+  --text-color: #f8f9fa; /* Light text color */
+  --light-text-color: #b0b0b0; /* Light gray text color */
+  --card-background: #333333; /* Dark card background */
+  --card-shadow: rgba(0, 0, 0, 0.5); /* Dark card shadow */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.theme-toggle-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  font-size: 1.5rem; /* Adjust icon size */
+}
+
+.theme-toggle-button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.gradient-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 119, 204, 0.7), rgba(255, 119, 0, 0.7)); /* Example gradient */
+  z-index: 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  z-index: 2; /* Ensure text is above the overlay */
+}
+
+.hero-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.hero-header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hero-header .hero-nav a {
+  margin-left: 1.5rem;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.hero-header .hero-nav a:hover {
+  color: var(--primary-color);
+}
+
+.cta-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* About Me Section */
+.about-me-wrapper {
+  padding: 4rem 2rem;
+  background-color: var(--card-background);
+  color: var(--text-color);
+}
+
+.about-me-photo img {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--card-shadow);
+}
+
+.about-me-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about-me-text p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+/* Skills Section */
+.skills-wrapper {
+  padding: 4rem 2rem;
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+.skills-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.skills-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.skill-card {
+  flex: 0 0 auto;
+  width: 120px;
+  padding: 1rem;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--card-shadow);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
