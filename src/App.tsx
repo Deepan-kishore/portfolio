@@ -28,7 +28,7 @@ const App: React.FC = () => {
       <>
         <motion.button
           onClick={toggleTheme}
-          className="theme-toggle-button"
+          className="theme-toggle-button mt-10 "
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
         >

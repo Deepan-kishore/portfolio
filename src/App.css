@@ -11,6 +11,7 @@
   --white: #ffffff; /* White color */
   --card-background: #ffffff; /* Card background color */
   --card-shadow: rgba(0, 0, 0, 0.1); /* Card shadow color */
+  --nav-background: rgba(223, 221, 221, 0.947); /* light background for navbar */
 }
 
 [data-theme="dark"] {
@@ -19,6 +20,7 @@
   --light-text-color: #b0b0b0; /* Light gray text color */
   --card-background: #333333; /* Dark card background */
   --card-shadow: rgba(0, 0, 0, 0.5); /* Dark card shadow */
+  --nav-background: rgba(0, 0, 0, 0.8); /* Dark background for navbar */
 }
 
 body {

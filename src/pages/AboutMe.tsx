@@ -4,28 +4,24 @@ import { motion } from 'framer-motion';
 const AboutMe: React.FC = () => {
   return (
     <div className="about-me-wrapper py-20 bg-gray-50">
-      <div className="row mx-auto flex flex-row md:flex-row items-center md:items-start">
+      <div className="row mx-auto flex flex-col md:flex-row items-center md:items-start">
         {/* Left Column: Image */}
         <motion.div
-          className="about-me-photo w-4/12 md:w-4/12 p-4  "
+          className="about-me-photo w-full md:w-4/12 p-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
         >
-         {/* <div className='' style={{height:"200px",width:"200px"}}  > */}
-         <img 
+          <img 
             src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Deepan Kishore" 
             style={{height:"auto",width:"100%"}}
-            // className="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover shadow-lg" 
-            // className="rounded-full" 
           />
-         {/* </div> */}
         </motion.div>
         
         {/* Right Column: Text Content */}
         <motion.div
-          className="about-me-text w-8/12 md:w-8/12 p-4 md:pl-8"
+          className="about-me-text w-full md:w-8/12 p-4 md:pl-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
