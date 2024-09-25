@@ -25,7 +25,7 @@ const Hero: React.FC<{ theme: 'light' | 'dark' }> = ({ theme }) => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
-        className="navbar fixed top-0 w-full flex justify-between items-center px-6 py-4 md:px-10 md:py-6 bg-black bg-opacity-50 backdrop-blur-md z-50"
+        className="topbar fixed top-0 w-full flex justify-between items-center px-6 py-4 md:px-10 md:py-6 bg-black bg-opacity-25 backdrop-blur-sm z-50"
       >
         <div className={`logo ${textColor} text-lg md:text-xl`}>Deepan Kishore</div>
         <MenuToggle toggle={() => setIsOpen(!isOpen)} isOpen={isOpen} theme={theme} />
@@ -56,7 +56,7 @@ const Hero: React.FC<{ theme: 'light' | 'dark' }> = ({ theme }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className={`text-base md:text-xl mt-4 ${subTextColor}`}
+          className={`text-base md:text-xl mt-4 ${subTextColor} hidden sm:block`}
         >
           I build seamless, scalable web applications that power startups and enterprises alike.
         </motion.p>
@@ -65,7 +65,7 @@ const Hero: React.FC<{ theme: 'light' | 'dark' }> = ({ theme }) => {
         <Link to="projects" smooth={true} duration={500}>
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className={`${ctaBgColor} text-white text-lg rounded-lg shadow-lg ${ctaHoverColor} transition duration-300 cta-button px-6 py-3 mt-6`}
+            className={`${ctaBgColor} text-white  rounded-lg shadow-lg ${ctaHoverColor} transition duration-300 cta-button `}
           >
             Explore my work
           </motion.div>
