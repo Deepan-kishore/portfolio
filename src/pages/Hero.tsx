@@ -24,7 +24,7 @@ const Hero: React.FC<{ theme: 'light' | 'dark' }> = ({ theme }) => {
       style={{ backgroundImage: `url(${bg})` }}
     >
       {/* Navigation Bar */}
-      <motion.nav
+      {/* <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
@@ -41,7 +41,7 @@ const Hero: React.FC<{ theme: 'light' | 'dark' }> = ({ theme }) => {
             <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
           </button>
         </div>
-      </motion.nav>
+      </motion.nav> */}
 
       {/* Mobile Menu */}
       <motion.div
@@ -70,7 +70,7 @@ const Hero: React.FC<{ theme: 'light' | 'dark' }> = ({ theme }) => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className={`text-lg md:text-2xl mt-4 ${subTextColor}`}
         >
-          Senior Software Engineer | 5+ Years in React & Cloud Solutions
+          Senior Software Engineer | 5+ Years in React & Backend Solutions
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
