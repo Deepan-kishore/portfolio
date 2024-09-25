@@ -26,3 +26,83 @@
 .navbar .nav-links a:hover {
   color: var(--primary-color);
 }
+
+
+
+/* Hero Section */
+.hero-wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .gradient-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 119, 204, 0.7), rgba(255, 119, 0, 0.7)); /* Example gradient */
+    z-index: 0;
+  }
+  
+  .hero-content {
+    padding: 15% 10%; /* Increase padding for more space */
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .hero-content h1 {
+    font-family: 'Poppins', sans-serif; /* Use a modern font */
+    font-size: 5rem; /* Increase font size */
+    font-weight: bold; /* Maintain boldness for emphasis */
+  }
+  
+  .hero-content p {
+    font-family: 'Lato', sans-serif; /* Modern font */
+    font-size: 1.5rem; /* Increase subheading size */
+    margin-top: 1rem; /* Add space above */
+  }
+  
+  .cta-button {
+    font-size: 1.25rem; /* Increase button text size */
+    padding: 0.75rem 1.5rem; /* Adjust padding for a larger button */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add a transform effect */
+    text-decoration: none;
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+    background-color: var(--secondary-color); /* Change color on hover */
+  }
+  
+  
+  .hero-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+  }
+  
+  .hero-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .hero-header .hero-nav a {
+    margin-left: 1.5rem;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .hero-header .hero-nav a:hover {
+    color: var(--primary-color);
+  }
