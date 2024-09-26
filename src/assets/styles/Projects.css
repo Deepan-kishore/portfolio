@@ -1,0 +1,90 @@
+.projects-wrapper {
+    padding: 80px 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .project-card {
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--card-shadow);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: var(--white);
+  }
+  
+  .card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: var(--white);
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .modal-content {
+    background: var(--card-background);
+    color: var(--text-color);
+  }
+  
+  .modal-header, .modal-footer {
+    border: none;
+  }
+  
+  .modal-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+  }
+  
+  .modal-body h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  }
+
+  .modal-body p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .modal-body .text-sm {
+    font-size: 14px;
+    color: var(--text-color);
+  }
+  
+  .button-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  .button-primary:hover {
+    background-color: var(--secondary-color);
+  }

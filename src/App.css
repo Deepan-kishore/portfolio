@@ -12,6 +12,16 @@
   --card-background: #ffffff; /* Card background color */
   --card-shadow: rgba(0, 0, 0, 0.1); /* Card shadow color */
   --nav-background: rgba(223, 221, 221, 0.947); /* light background for navbar */
+
+
+  --light-gradient-start: #4e54c8;
+    --light-gradient-end: #8f94fb;
+    --dark-gradient-start: #121320;
+    --dark-gradient-end: #838496;
+
+
+    --gradient-start: var(--light-gradient-start);
+    --gradient-end: var(--light-gradient-end);
 }
 
 [data-theme="dark"] {
@@ -21,6 +31,9 @@
   --card-background: #333333; /* Dark card background */
   --card-shadow: rgba(0, 0, 0, 0.5); /* Dark card shadow */
   --nav-background: rgba(0, 0, 0, 0.8); /* Dark background for navbar */
+
+  --gradient-start: var(--dark-gradient-start);
+  --gradient-end: var(--dark-gradient-end);
 }
 
 body {
